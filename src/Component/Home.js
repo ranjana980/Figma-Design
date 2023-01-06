@@ -2,8 +2,10 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 // import logoFigma from '../..'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import SearchIcon from '@material-ui/icons/Search';
+// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+// import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+// import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+// import SearchIcon from '@material-ui/icons/Search';
 import logoFigma from './../logofigma.png';
 export default function Home() {
     const responsive = {
@@ -34,14 +36,15 @@ export default function Home() {
                     <div className='flex font-lg text-white'>
                         <span className='lg:p-3'><u className='lg:p-5'>Home</u></span>
                         <span className='lg:p-3'>Our Industrius</span>
-                        <span className='mt-4'><ExpandMoreIcon style={{ fontSize: '2rem' }} /></span>
+                        <i className="fas fa-clock text-white" ></i>
+                        <span className='mt-4'></span>
                         <span className='lg:p-3'>Our Company</span>
-                        <span className='mt-4'><ExpandMoreIcon style={{ fontSize: '2rem' }} /></span>
+                        <span className='mt-4'><i className="fas fa-angle-down" aria-hidden="true"></i></span>
                     </div>
                     <div className='right-nav text-white'>
                         <span className='p-3 mb-3'>Career</span>
                         <span className='p-3 mb-3'>Contact</span>
-                        <span className='p-1 mb-4'> <SearchIcon className=' search' /></span>
+                        {/* <span className='p-1 mb-4'> <SearchIcon className=' search' /></span> */}
 
                         {/* <span>Seacrh</span> */}
                     </div>
