@@ -7,6 +7,90 @@
   pointer-events: none;
 }
 
+span {
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+.right-nav span{
+  /* margin-top: 20px; */
+  position: relative;
+  top:20px;
+  font-size: 1.3rem;
+}
+.search{
+  font-size: 2rem !important;
+}
+.main-nav {
+  position: relative;
+  /* padding: 10px; */
+  top: 5px;
+  z-index: 9;
+}
+h4{
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 45px;
+}
+h1{
+  line-height: 75px;
+  font-size: 4.5rem;
+  font-family: inherit;
+  font-weight: 900;
+  background: linear-gradient(to right, 
+  #ff6b08, #eedd44);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+  /* color:linear-gradient( ); ; */
+}
+.figmalogo {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: 30px;
+}
+
+.nav {
+  filter: drop-shadow(2px 4px 6px black);
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  border-radius: 6px;
+  position: relative;
+  top: 30px;
+  left: 100px;
+  border: 2px solid white;
+
+}
+.more-btn{
+  margin-top: 10px;
+  background: linear-gradient(to right, #eedd44,
+  #ff6b08 );
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: cursive;
+}
+.home {
+  position: relative;
+  background-image: url('https://researchleap.com/wp-content/uploads/2021/09/Usine-du-futur_0-scaled.jpg') ;
+  height: 47rem;
+  width: 100%;
+  bottom: 230px;
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  background-size: 99% 100%;
+  filter: brightness(0.7);
+  /* opacity: .8; */
+  /* filter: ; */
+  backdrop-filter: brightness(0.5);
+  /* background-image: */
+  /* background-color: #282c34; */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +116,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
