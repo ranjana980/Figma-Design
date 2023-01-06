@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <h1>Design of Figma</h1>
+     <h1>Design of Figma design</h1>
     </div>
   );
 }
