@@ -9,10 +9,14 @@
 
 span {
   font-size: 1.5rem;
+  padding: 0.5rem;
+
   font-family: cursive;
 }
 .right-nav span{
   /* margin-top: 20px; */
+  padding: 0.5rem;
+
   position: relative;
   top:20px;
   font-size: 1.3rem;
@@ -30,10 +34,10 @@ h4{
   font-size: 2rem;
   color: white;
   font-weight: 600;
-  line-height: 45px;
+  line-height: 50px;
 }
 h1{
-  line-height: 75px;
+  line-height: 80px;
   font-size: 4.5rem;
   font-family: inherit;
   font-weight: 900;
@@ -42,6 +46,25 @@ h1{
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
   /* color:linear-gradient( ); ; */
+}
+.offer{
+  background: linear-gradient(to right, 
+  white,#41aecc) !important;
+-webkit-text-fill-color: transparent !important;
+-webkit-background-clip: text !important;
+
+}
+.nature{
+  background: linear-gradient(to right, #61dafb,#1f854ed9) !important;
+-webkit-text-fill-color: transparent !important;
+-webkit-background-clip: text !important;
+
+}
+.place{
+  background: linear-gradient(to right, #86b4c1,#8b026ed9) !important;
+-webkit-text-fill-color: transparent !important;
+-webkit-background-clip: text !important;
+
 }
 .figmalogo {
   height: 150px;
@@ -77,7 +100,7 @@ h1{
 .home {
   position: relative;
   background-image: url('https://researchleap.com/wp-content/uploads/2021/09/Usine-du-futur_0-scaled.jpg') ;
-  height: 47rem;
+  height: 57rem;
   width: 100%;
   bottom: 230px;
   background-repeat: no-repeat;
@@ -90,7 +113,56 @@ h1{
   /* background-image: */
   /* background-color: #282c34; */
 }
+h5{
+  font-size: 1.5rem;
+  filter: drop-shadow(2px 4px 6px black);
+}
+h2{
+  filter: drop-shadow(2px 4px 6px black);
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+}
+.read-more{
+  border: 1px solid purple;
+  color: white;
+  border-radius: 15px;
+  height: 40px;
+  width: 160px;
+}
 
+.sm-div{
+  height: 20px;
+  width: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  right: 11px;
+  float: right;
+}
+.sm-div-left{
+  height: 20px;
+  width: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 170px;
+  float: left;
+}
+.img-lottie{
+  height: 300px;
+  width: 300px;
+}
+.right-side{
+  position: relative;
+  left: 530px;
+}
+.left-side{
+  position: relative;
+  left: 130px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -130,10 +202,10 @@ h1{
     width: 81%;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 32px;
     border-radius: 6px;
     position: relative;
-    top: 10px;
+    top: 4px;
     left: 10px;
     border: 2px solid white;
   
@@ -141,6 +213,15 @@ h1{
   span {
     font-size: 10px;
     font-family: cursive;
+    padding: 0.2rem;
+  }
+  .right-nav span{
+    /* margin-top: 20px; */
+    padding: 0.2rem;
+
+    position: relative;
+    top:0px;
+    font-size: 10px;
   }
   .figmalogo {
     height: 50px;
