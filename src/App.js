@@ -4,7 +4,7 @@ import Home from './Component/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-900">
      {/* <h1 className='text-start'>Design of Figma design</h1> */}
      <Home/>
     </div>

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -7,65 +8,134 @@
   pointer-events: none;
 }
 
+.left-shadow-div {
+  height: 200px;
+  width: 200px;
+  background-color: #eedd44;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #f00;
+}
+.div-left h1{
+  font-size: 50px;
+
+}
+.div-left h5{
+  font-size: 30px;
+
+}
+.div-left{
+  position: relative;
+  left:40px;
+}
+.arrow-right {
+     /* box-shadow: 10px 10px 10px 10px yellow; */
+     position: relative;
+     width: 0;
+     height: 0;
+     /* background: yellow; */
+     border-left: 27px solid transparent;
+     border-top: 77px solid transparent;
+     border-bottom: 248px solid rgb(255, 255, 0);
+     border-left: 257px solid yellow;
+     left: -100px;
+}
+
+.arrow-left {
+  /* box-shadow: 10px 10px 10px 10px yellow; */
+  position: relative;
+  width: 0;
+  height: 0;
+  /* background: yellow; */
+  border-left: 27px solid transparent;
+  border-top: 77px solid transparent;
+  border-bottom: 248px solid rgb(255, 255, 0);
+  border-left: 257px solid yellow;
+  float: right;
+  /* rotate: ; */
+  transform: rotate(-90deg);
+  bottom: 10px;
+  left: 190px;
+}
+
+
+
 span {
   font-size: 1.5rem;
   padding: 0.5rem;
 
   font-family: cursive;
 }
-.right-nav span{
-  /* margin-top: 20px; */
-  padding: 0.5rem;
 
+.right-nav span {
+  padding: 0.5rem;
   position: relative;
-  top:20px;
+  top: 20px;
   font-size: 1.3rem;
 }
-.search{
+
+.search {
   font-size: 2rem !important;
 }
+
 .main-nav {
   position: relative;
-  /* padding: 10px; */
   top: 5px;
   z-index: 9;
 }
-h4{
+
+h4 {
   font-size: 2rem;
   color: white;
   font-weight: 600;
   line-height: 50px;
 }
-h1{
+
+h1 {
   line-height: 80px;
   font-size: 4.5rem;
   font-family: inherit;
   font-weight: 900;
-  background: linear-gradient(to right, 
-  #ff6b08, #eedd44);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
-  /* color:linear-gradient( ); ; */
+  background: linear-gradient(to right,
+      #ff6b08, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-.offer{
-  background: linear-gradient(to right, 
-  white,#41aecc) !important;
--webkit-text-fill-color: transparent !important;
--webkit-background-clip: text !important;
 
+.offer {
+  background: linear-gradient(to right,
+      white, #41aecc) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
 }
-.nature{
-  background: linear-gradient(to right, #61dafb,#1f854ed9) !important;
--webkit-text-fill-color: transparent !important;
--webkit-background-clip: text !important;
 
+.nature {
+  background: linear-gradient(to right, #61dafb, #1f854ed9) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
 }
-.place{
-  background: linear-gradient(to right, #86b4c1,#8b026ed9) !important;
--webkit-text-fill-color: transparent !important;
--webkit-background-clip: text !important;
 
+.place {
+  background: linear-gradient(to right, #86b4c1, #8b026ed9) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
 }
+
 .figmalogo {
   height: 150px;
   width: 150px;
@@ -84,12 +154,12 @@ h1{
   top: 30px;
   left: 100px;
   border: 2px solid white;
-
 }
-.more-btn{
+
+.more-btn {
   margin-top: 10px;
   background: linear-gradient(to right, #eedd44,
-  #ff6b08 );
+      #ff6b08);
   color: white;
   border: 2px solid white;
   border-radius: 10px;
@@ -97,33 +167,32 @@ h1{
   font-size: 20px;
   font-family: cursive;
 }
+
 .home {
   position: relative;
-  background-image: url('https://researchleap.com/wp-content/uploads/2021/09/Usine-du-futur_0-scaled.jpg') ;
+  background-image: url('https://researchleap.com/wp-content/uploads/2021/09/Usine-du-futur_0-scaled.jpg');
   height: 57rem;
   width: 100%;
   bottom: 230px;
   background-repeat: no-repeat;
-  /* background-size: auto; */
   background-size: 99% 100%;
   filter: brightness(0.7);
-  /* opacity: .8; */
-  /* filter: ; */
   backdrop-filter: brightness(0.5);
-  /* background-image: */
-  /* background-color: #282c34; */
 }
-h5{
+
+h5 {
   font-size: 1.5rem;
   filter: drop-shadow(2px 4px 6px black);
 }
-h2{
+
+h2 {
   filter: drop-shadow(2px 4px 6px black);
   font-size: 2.5rem;
   color: white;
   font-weight: 700;
 }
-.read-more{
+
+.read-more {
   border: 1px solid purple;
   color: white;
   border-radius: 15px;
@@ -131,7 +200,7 @@ h2{
   width: 160px;
 }
 
-.sm-div{
+.sm-div {
   height: 20px;
   width: 20px;
   border: 1px solid white;
@@ -141,7 +210,8 @@ h2{
   right: 11px;
   float: right;
 }
-.sm-div-left{
+
+.sm-div-left {
   height: 20px;
   width: 20px;
   border: 1px solid white;
@@ -151,18 +221,72 @@ h2{
   left: 170px;
   float: left;
 }
-.img-lottie{
+
+.img-lottie {
   height: 300px;
   width: 300px;
 }
-.right-side{
+
+.right-side {
+  position: relative;
+  left: 595px;
+}
+
+.left-side {
+  position: relative;
+  left: 25px;
+}
+
+.small-div {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  /* background: radial-gradient(purple,white); */
+  background: radial-gradient(#780778, #d5add7);
+  /* box-shadow: 5px px purple; */
+  border-radius: 50%;
+  left: 612px;
+}
+
+.small-div-pack {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  /* background: radial-gradient(purple,white); */
+  background: radial-gradient(#780778, #d5add7);
+  border-radius: 50%;
+  left: 1083px;
+  margin-top: 18px;
+}
+
+.small-div-left {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  background: purple;
+  border-radius: 50%;
+  left: 16px;
+  margin-top: 14px;
+}
+
+.arrow {
+  font-size: 30px !important;
+  margin-top: 10px;
+}
+.icon{
+  color: white !important;
+    font-size: 30px !important;
+    margin-top: 15px !important;
+ }
+.search {
+  font-size: 30px !important;
+}
+
+.right-side-pack {
   position: relative;
   left: 530px;
 }
-.left-side{
-  position: relative;
-  left: 130px;
-}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -193,10 +317,131 @@ h2{
     transform: rotate(360deg);
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 578px)  {
-  .home{
+
+@media only screen and (min-width: 320px) and (max-width: 578px) {
+ .arrow-right{
+      /* box-shadow: 10px 10px 10px 10px yellow; */
+      position: relative;
+      width: 0;
+      height: 0;
+      /* background: yellow; */
+      border-left: 27px solid transparent;
+      border-top: 74px solid transparent;
+      border-bottom: 98px solid rgb(255, 255, 0);
+      border-left: 120px solid yellow;
+      left: -40px;
+ }
+ .right-side-pack {
+  position: relative;
+  left: -15px;
+}
+.small-div-pack {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  /* background: radial-gradient(purple,white); */
+  background: radial-gradient(#780778, #d5add7);
+  border-radius: 50%;
+  left: 160px;
+  margin-top: 10px;
+}
+ .arrow-left{
+  /* box-shadow: 10px 10px 10px 10px yellow; */
+  position: relative;
+  width: 0;
+  height: 0;
+  /* background: yellow; */
+  border-left: 27px solid transparent;
+  border-top: 74px solid transparent;
+  border-bottom: 98px solid rgb(255, 255, 0);
+  border-left: 120px solid yellow;
+  left: -27px;
+  top: 100px;
+  transform: rotate(-90deg);
+}
+ .icon{
+  color: white !important;
+    font-size: 12px !important;
+    margin-top: 4px !important;
+ }
+ .small-div-left{
+  height: 30px;
+  width: 40px;
+  left: 0px;
+  right: 40px;
+ }
+ .small-div{
+  height: 30px;
+    width: 40px;
+    position: relative;
+    /* background: radial-gradient(purple,white); */
+    background: radial-gradient(#780778, #d5add7);
+    border-radius: 50%;
+    left: 10px;
+ }
+ .div-left {
+  position: relative;
+  left: 0px;
+}
+.div-left h1{
+  font-size: 20px;
+}
+.div-left h5{
+  font-size: 10px;
+}
+  .sm-div {
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    right: 8px;
+    float: right;
+  }
+
+  .sm-div-left {
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+    left: 81px;
+    float: left;
+  }
+
+  .read-more {
+    border: 1px solid purple;
+    color: white;
+    border-radius: 6px;
+    height: 24px;
+    width: 74px;
+    font-size: 9px;
+    padding: -4.5rem;
+  }
+
+  .img-lottie {
+    position: relative;
+    top: 10px;
+    height: 179px;
+    width: 179px;
+  }
+
+  .right-side {
+    position: relative;
+    left: 0px;
+  }
+
+  .left-side {
+    position: relative;
+    left: 0px;
+  }
+
+  .home {
     height: 38rem;
   }
+
   .nav {
     filter: drop-shadow(2px 4px 6px black);
     width: 81%;
@@ -208,43 +453,76 @@ h2{
     top: 4px;
     left: 10px;
     border: 2px solid white;
-  
-  }
-  span {
-    font-size: 10px;
-    font-family: cursive;
-    padding: 0.2rem;
-  }
-  .right-nav span{
-    /* margin-top: 20px; */
-    padding: 0.2rem;
 
-    position: relative;
-    top:0px;
-    font-size: 10px;
   }
+
+  span {
+    font-size: 9px;
+    font-family: cursive;
+    padding: 0px;
+    margin-top: 7px;
+  }
+  .search {
+    font-size: 15px !important;
+}
+  .arrow {
+    font-size: 17px !important;
+    margin-top: 5px;
+}
+  .right-nav span {
+    padding: 0px;
+    position: relative;
+    top: 0px;
+    font-size: 9px;
+  }
+
   .figmalogo {
     height: 50px;
     width: 50px;
     position: relative;
     left: 5px;
   }
-  h4{
-    font-size: 1rem;
+
+  h4 {
+    font-size: .9rem;
     color: white;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 20px;
+    margin-top: 35px;
   }
-  h1{
-    line-height: 30px;
-    font-size: 2.5rem;
+
+  .more-btn {
+    margin-top: 16px;
+    background: linear-gradient(to right, #eedd44, #ff6b08);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: cursive;
+  }
+
+  h1 {
+    line-height: 40px;
+    font-size: 2rem;
     font-family: inherit;
     font-weight: 900;
-    background: linear-gradient(to right, 
-    #ff6b08, #eedd44);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-    /* color:linear-gradient( ); ; */
+    background: linear-gradient(to right,
+        #ff6b08, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  h5 {
+    font-size: .7rem;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  h2 {
+    filter: drop-shadow(2px 4px 6px black);
+    font-size: .7rem;
+    color: white;
+    font-weight: 700;
   }
 
 }

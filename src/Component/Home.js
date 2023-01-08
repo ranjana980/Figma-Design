@@ -3,6 +3,13 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Lottie from 'react-lottie';
 import WidgetsIcon from '@material-ui/icons/Widgets';
+import HotelIcon from '@material-ui/icons/Hotel';
+import IndeterminateCheckBoxIcon from '@material-ui/icons/IndeterminateCheckBox';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import StoreMallDirectoryIcon from '@material-ui/icons/StoreMallDirectory';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import SearchIcon from '@material-ui/icons/Search';
+import SpaIcon from '@material-ui/icons/Spa';
 import cat from '../lotties/developer.json'
 import hotel from '../lotties/hotel.json'
 import food from '../lotties/food.json'
@@ -96,14 +103,16 @@ export default function Home() {
                     <div className='flex font-lg text-white'>
                         <span className=' '><u className='p-5'>Home</u></span>
                         <span className=''>Our Industrius</span>
-                        <i className="fas fa-clock text-white" ></i>
+                        <KeyboardArrowDownIcon className='text-white arrow' />
                         <span className='mt-4'></span>
                         <span className=''>Our Company</span>
+                        <KeyboardArrowDownIcon className='text-white arrow' />
                         <span className='mt-4'><i className="fas fa-angle-down" aria-hidden="true"></i></span>
                     </div>
                     <div className='right-nav text-white'>
                         <span className=' mb-3'>Career</span>
-                        <span className=' mb-3'>Contact</span>  
+                        <span className=' mb-3'>Contact</span>
+                        <span className=' mb-3'><SearchIcon className='text-white search' /></span>
                     </div>
                 </div>
             </div>
@@ -132,6 +141,19 @@ export default function Home() {
                 </div>
             </div>
             <div className='relative bottom-72 bg-gray-900'>
+                <div className='justify-content-between w-100 lg:p-20 xs:p-10' style={{ borderTop: '1px solid white', display: 'flex' }}>
+                    {/* <div class="arrow-up"></div> */}
+                    {/* <div class="arrow-down"></div> */}
+                    {/* <div class="arrow-left"></div> */}
+                    <div className="arrow-right"></div>
+                    <div className="div-left">
+                        <h1 className='text-gradient-to-r from-yello-400'>THE RAMAERA EXPANSION </h1>
+                        <h5 className="text-white">
+                            We are aiming to be a part of the major industrialisation drive<br /> in india and embarking our presnence in every significant<br />industrial domain including IT.
+                        </h5>
+                    </div>
+                </div>
+
                 <div className='justify-content-between w-100 p-5' style={{ borderTop: '1px solid white', display: 'flex' }}>
                     <div className='left-side'>
                         <div className='img-lottie'>
@@ -143,15 +165,23 @@ export default function Home() {
                     </div>
                     <div className='right-side text-end ' >
                         <h2>Unleashing the strength of </h2>
-                        <h2 style={{color:'#8c0b9a',}}>Technology </h2>
+                        <h2 style={{ color: '#8c0b9a', }}>Technology </h2>
                         <h5 className='text-gray-300'>We belive in innvovation and excellence hence,<br />our approach in the field of technology is<br />focused to relish Incredible custmor experience<br />and stability business models for tomarrow.</h5>
                         <div className='d-flex justify-content-end'>
                             <button className='read-more p-2'>Read More</button>
-                            <div className='sm-div' ></div>
+                            <div className='sm-div' >
+
+                            </div>
                         </div>
+                    </div>
+                    <div className='small-div'>
+                        <WidgetsIcon className="icon" />
                     </div>
                 </div>
                 <div className='justify-content-between w-100 p-5' style={{ borderTop: '1px solid white', display: 'flex' }}>
+                    <div className='small-div-left' style={{ background: 'radial-gradient(rgb(151 141 13), rgb(212 211 190))' }}>
+                        <HotelIcon className="icon"  />
+                    </div>
                     <div className='left-side text-start' >
                         <h2 className='text-yellow-600'>making </h2>
                         <h2 className='text-yellow-600'>accommodations easier </h2>
@@ -179,10 +209,13 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <div className='right-side text-end ' >
+                    <div className='small-div-pack' style={{ background: 'radial-gradient(#c88153, rgb(212, 211, 190))' }}>
+                        <IndeterminateCheckBoxIcon className="icon" />
+                    </div>
+                    <div className='right-side-pack text-end ' >
                         <h2>Packing industry for</h2>
-                        <div className='flex relative left-60'><h2>business </h2><h2 className='text-orange-200 ml-2'>growth</h2></div>
-                        <h5 className='text-gray-300'>We provide packaging solutions to help your<br />business flourish with boosted outreach.<br />ensuring the protection,containment,and<br />communication of packaged projects is our<br/>foremost priority.</h5>
+                        <div className='flex relative lg:left-48 xs:left-10'><h2>business </h2><h2 className='text-orange-200 ml-2'>growth</h2></div>
+                        <h5 className='text-gray-300'>We provide packaging solutions to help your<br />business flourish with boosted outreach.<br />ensuring the protection,containment,and<br />communication of packaged projects is our<br />foremost priority.</h5>
                         <div className='d-flex justify-content-end'>
                             <button className='read-more p-2'>Read More</button>
                             <div className='sm-div' ></div>
@@ -191,8 +224,12 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='justify-content-between w-100 p-5' style={{ borderTop: '1px solid white', display: 'flex' }}>
+                    <div className='small-div-left' style={{ background: 'radial-gradient( #8b026ed9,#86b4c1)' }}>
+                        <AddShoppingCartIcon className="icon"  />
+                    </div>
                     <div className='left-side text-start' >
-                        <h2  className='text-gradient-to-r from-blue-800 offer'>offering the best with </h2>
+
+                        <h2 className='text-gradient-to-r from-blue-800 offer'>offering the best with </h2>
                         <h2 className='text-gradient-to-r from-blue-800 offer'>fmcg industry </h2>
                         <h5 className='text-gray-300'>Ramaera fmca industry has commenced an<br />extensive range of fmca to make your days<br />more than ordinary. We plan to offer you<br />nothing less than the best.</h5>
                         <div className='d-flex justify-content-end'>
@@ -227,8 +264,14 @@ export default function Home() {
                             <div className='sm-div' ></div>
                         </div>
                     </div>
+                    <div className='small-div' style={{ background: 'radial-gradient(#1f854ed9,#61dafb)' }}>
+                        <SpaIcon className="icon" />
+                    </div>
                 </div>
-                <div className='justify-content-between w-100 p-5' style={{ borderTop: '1px solid white', display: 'flex' }}>
+                <div className='justify-content-between w-100 p-5' style={{ borderTop: '1px solid white', borderBottom: '1px solid white', display: 'flex' }}>
+                    <div className='small-div-left' style={{ background: 'radial-gradient(#8b026ed9,#86b4c1 )' }}>
+                        <StoreMallDirectoryIcon className="icon" />
+                    </div>
                     <div className='left-side text-start' >
                         <h2>Get all your essentials in</h2>
                         <h2 className='place'>one place </h2>
@@ -245,6 +288,11 @@ export default function Home() {
                                 className="img-lottie"
                             />
                         </div>
+                    </div>
+                </div>
+                <div className='bg-gray-900 lg:p-48'>
+                    <div className='arrow-left'>
+
                     </div>
                 </div>
             </div>
